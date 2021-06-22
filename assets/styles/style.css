@@ -1,0 +1,88 @@
+:root{
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --Dark-grayish-blue: hsl(227, 12%, 61%);
+    --very-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --vary-light-gray: hsl(0, 0%, 98%);
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*--------------------Container-Top--------------------*/
+
+.containerTop{
+    padding: 1rem 0;
+
+}
+/*--------------------Menu-Mobilee--------------------*/
+.nv-mb{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+.menu-active{
+    height: 90vh;
+    background-color: rgba(151, 153, 151, 0.84);
+    width: 100%;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    transition: 1.2s;
+}
+.menu-active-list{
+    background-color: var(--vary-light-gray);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vw;
+    margin-top: 10vh;
+    border-radius: 2%;
+
+}
+.menu-active ul li{
+    color: var(--dark-blue);
+    font-size: 18px;
+    padding: 1vh;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close{
+    display: none;
+}
+.open{
+    display: block;
+}
+/*--------------------Carrosel-Depoiment--------------------*/
+.team{
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+.team button{
+    background-color: var(--bright-red);
+    border: none;
+    color: var(--vary-light-gray);
+    padding: 2vh;
+    border-radius: 2rem;
+    width: 30vw;
+    margin-top: 1vh;
+}
+.team h1{
+    color: var(--dark-blue);
+}
+
